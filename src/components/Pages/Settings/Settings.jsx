@@ -6,7 +6,7 @@ export default function Settings() {
 
     return(
         <>
-        <div>This is Settings page</div>
+        <div id="page">This is Settings page</div>
         </>
     )
 }

@@ -6,41 +6,39 @@ export default function NavBar() {
     return (
         <>
             <div className="Container">
-                <span id="logo">Logo</span>
+                <span ><button id="logo">Logo</button></span>
 
 
-                <div className="logged">
-                    <Link to={"/logIn"} >
-                        <button id="Btn">Log In</button>
+                <div className="logged"  style={{ display: 'flex' }}>
+                   
+                    <Link to={"/"} style={{ textDecoration: "none" }}>
+                        <button className="link">Home </button>
+                    </Link >
+
+                    <NavLink to={"/about"} style={{ textDecoration: "none" }}>
+                        <button className="link">About</button >
+                    </NavLink>
+
+                    <Link to={"/Contact"} style={{ textDecoration: "none" }}>
+                        <button className="link">Contact</button >
                     </Link>
-                    <Link to={"/logout"}>
-                        <button id="Btn">Log Out</button>
+
+                    <Link to={"/Settings"} style={{ textDecoration: "none" }}>
+                        <button  className="link">Settings</button >
                     </Link>
 
                 </div>
 
                 <div className="nav">
 
-                    <Link to={"/"} style={{ textDecoration: "none" }}>
-                        <div className="link">Home</div>
-                    </Link >
-
-                    <NavLink to={"/about"} style={{ textDecoration: "none" }}>
-                        <div className="link">About</div>
-                    </NavLink>
-
-                    <Link to={"/Contact"} style={{ textDecoration: "none" }}>
-                        <div className="link">Contact</div>
-                    </Link>
 
                     <Link to={"/signupform"} >
-                        <div className="link">Form</div>
+                        <button  className="link">Log In</button >
                     </Link>
 
-                    <Link to={"/Settings"} style={{ textDecoration: "none" }}>
-                        <div className="link">Settings</div>
+                    <Link to={"/logout"}>
+                        <button id="Btn">Log Out</button>
                     </Link>
-
 
                 </div>
             </div>

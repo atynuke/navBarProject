@@ -5,7 +5,7 @@ import About from './components/Pages/About/About.jsx'
 import Contact from './components/Pages/Contact/Contact.jsx'
 import SignUpForm from "./components/Pages/Form/Form.jsx"
 import Settings from './components/Pages/Settings/Settings.jsx'
-import LogIn from './components/Pages/LogIn/LogIn.jsx'
+// import LogIn from './components/Pages/LogIn/LogIn.jsx'
 import LogOut from './components/Pages/Logout/logout.jsx'
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/signupform" element={<SignUpForm />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/logIn" element={<LogIn />} />
+          {/* <Route path="/logIn" element={<LogIn />} /> */}
           <Route path="/logout" element={<LogOut />} />
 
         </Routes>

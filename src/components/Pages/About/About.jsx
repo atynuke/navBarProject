@@ -6,7 +6,7 @@ export default function About () {
 
     return(
         <>
-        <div>This is About page</div>
+        <div id="page">This is About page</div>
         </>
     )
 }

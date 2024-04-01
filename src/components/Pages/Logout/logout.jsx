@@ -5,7 +5,7 @@ export default function LogOut() {
 
     return(
         <>
-        <div>You are Logged Out</div>
+        <div id="page">You are Logged Out</div>
         </>
     )
 }
