@@ -27,6 +27,10 @@ export default function NavBar() {
                         <button  className="link">Settings</button >
                     </Link>
 
+                    <Link to={"/*"} style={{ textDecoration: "none" }}>
+                        PAGE NOT FOUND
+                    </Link>
+
                 </div>
 
                 <div className="nav">
