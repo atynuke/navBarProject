@@ -28,7 +28,7 @@ export default function NavBar() {
                     </Link>
 
                     <Link to={"/*"} style={{ textDecoration: "none" }}>
-                        PAGE NOT FOUND
+                        
                     </Link>
 
                 </div>

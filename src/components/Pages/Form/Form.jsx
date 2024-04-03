@@ -25,19 +25,28 @@ export default function SignUpForm() {
         console.log(FormInput)
     }
 
+    //vadilation
+//     const [Validation, setValidation]
+// if(firstName.length>8){
+//     setValidation(firstNameVal: false);
+// } 
+// if (firstName.length == "") {
+//     alert("Please enter your name.");
+//     firstName.focus();
+//     return false;
+
     return (
         <>
             <div className=" FormDiv">
 
-                <form onSubmit={"handleSubmit"}>
+                <form onSubmit={handleSubmit}>
 
                     <h1> Registration Form</h1>
                     <div className="FormInput">
                         <label>First Name:</label>
                         <input name="firstName"
                             type="text"
-                            style={{ textAlign: "center" }}
-                            value={SignUpForm.firstName}
+c                            value={SignUpForm.firstName}
                             placeholder="Enter your First name"
                             onChange={handleChange} />
                     </div>
@@ -84,7 +93,7 @@ export default function SignUpForm() {
                     </div>
 
                     <br />
-                    <button id="submit">Submit Form</button>
+                    <button id="submit" type="submit">Submit Form</button>
 
                 </form>
 
